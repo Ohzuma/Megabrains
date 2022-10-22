@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    padding: 30px 10%;
+    height: 80px;
+    z-index: 999;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+}
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: cursive;
+    color: #fff;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-items li {
+    padding: 15px;
+    align-items: center;
+    display: flex;
+}
+
+.nav-items li a {
+
+    font-size: 16px;
+    font-weight: lighter !important;
+    letter-spacing: 1px;
+    color: #fff;
+    transition: all ease 0.5s;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-weight: lighter;
+    color: #ffff;
+    background-color: rgb(50, 10, 155);
+    animation-name: scale;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    transform: scale(0)
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    30% {
+        transform: scale(1);
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    80% {
+        transform: scale(1.2);
+        opacity: 1;
+        transition: 0.5s;
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.hero {
+    background-image: linear-gradient(to right, rgba(0, 0, 1, 1), rgba(0, 0, 0, 0.5)),
+        url(images/pexels-elevate-digital-1647905.jpg);
+    height: 500px;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero-text {
+    color: #fff;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    width: 100%;
+}
+
+.hero-text>span {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 50px;
+}
+
+.hero-text>em {
+    font-style: italic;
+    color: rgb(255, 10, 10);
+}
