@@ -23,7 +23,7 @@
     src: url(asset/Heebo-Regular.ttf);
   } */
   @font-face {
-    font-family: Metropolis;
+    font-family: metro;
     src: url(asset/Metropolis-Regular.otf);
   }
   @font-face {
@@ -33,6 +33,13 @@
   @font-face {
     font-family: zilla;
     src: url(asset/ZillaSlab-Regular.ttf);
+  }
+  @font-face {
+    font-family: interSemi;
+    src: url(asset/Inter-SemiBold.ttf);
+  }
+  :root{
+    --headingColor:0F5499;
   }
   * {
     margin: 0;
@@ -80,11 +87,16 @@ body{
 .nav-items li a {
 
     font-size: 16px;
-    font-weight: lighter !important;
+    font-weight:700;
     letter-spacing: 1px;
     color: #000;
     transition: all ease 0.5s;
-    font-family: popinsLight;
+    font-family: interSemi;
+}
+.nav-items li a:hover{
+    color: #0F5499;
+    transform: 0.5s;
+    cursor: pointer;
 }
 
 .nav-btn {
@@ -92,16 +104,20 @@ body{
     border: none;
     outline: none;
     border-radius: 50px;
-    font-weight: lighter;
-    font-family: popinsMedium;
+    font-weight: 600;
+    font-family: interSemi;
     color: #ffff;
-    background-color: rgb(50, 10, 155);
+    letter-spacing: 1px;
+    background-color:#0F5499;
     animation-name: scale;
     animation-duration: 7s;
     animation-iteration-count: infinite;
     transform: scale(0)
 }
-
+.nav-btn:hover{
+    background-color:#0a4885;
+    cursor: pointer;
+}
 @keyframes scale {
     0% {
         transform: scale(1);
@@ -152,20 +168,23 @@ body{
     transform: translate(-50%, -50%);
     font-size: 30px;
     width: 100%;
-    font-family: printclearly;
+    line-height: 4.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-text span {
     font-weight: 700;
     letter-spacing: 1px;
-    font-size: 50px;
-    font-family: popinsRegular;
+    font-size: 4rem;
+    font-family:metro ;
+    font-weight:bolder;
 }
 
 .hero-text em {
     font-style: italic;
     color: rgb(255, 10, 10);
-    font-family: popinsRegular;
+    font-weight:bolder;
 }
 
 section {
@@ -175,7 +194,7 @@ section {
 .banner {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    grid-gap: 1em;
+    grid-gap: 2rem;
     background-color: #fff;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
     padding:50px 50px 90px 50px ;
@@ -196,9 +215,9 @@ section {
 
 .banner_box p {
     font-size: 16px;
-    font-weight: lighter !important;
+    font-weight: 500 !important;
     color: rgb(27, 25, 25);
-    font-family: heebo;
+    font-family: inter;
     width: 100%;
     line-height: 1.5;
     padding-bottom: 30px;
@@ -214,6 +233,7 @@ section {
     outline: none;
     border-radius: 30px;
     font-size: 18px;
+    font-family: interSemi;
 }
 
 .banner_box h3{
@@ -222,25 +242,17 @@ section {
     font-weight: 700;
     padding-top: 30px;
     color: rgb(3, 40, 107);
-    font-family: popinsMedium;
+    font-family: zilla;
 }
-h3{
-    font-family: popinsMedium;
-}
+
 
 .course-heading h3 {
     text-align: center;
     font-size: 40px;
   color: rgb(3, 40, 107);
+  font-family: zilla;
+  font-weight: 700;
 }
-
-.course-heading h6 {
-    text-align: center;
-    font-style: italic;
-    font-size: 11px;
-    color: #0b0b13;
-}
-
 .course-heading {
     padding-bottom: 10%;
 }
@@ -260,9 +272,11 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: interSemi;
+    letter-spacing: 1px;
 }
 .course_box_container .bx-btn:hover{
-    background-color:  rgb(107, 5, 5);
+    background-color:  rgb(142, 4, 4);
     transition: 0.3s;
 }
 
@@ -310,25 +324,25 @@ h3{
 padding: 20px;
 }
 
-.course_box_container>div h3 {
-    /* padding-bottom: 10px; */
+.box > h3 {
     font-size: 20px;
     color: rgb(6, 49, 129);
+    font-family: zilla;
 }
 
 .course_box_container>div p {
-    line-height: 1.5;
+    line-height: 1.5rem;
     font-size: 14px;
     color: rgb(0,0,0,0.80);
-    font-family: popinsLight;
+    font-family: inter;
 }
 
-
+/* 
 h4 {
     color: red;
     padding-bottom: 30px;
     font-size: 30px;
-}
+} */
 
 .deliver {
     display: grid;
@@ -342,7 +356,8 @@ h4 {
 .driven h3 {
     font-size: 30px;
     padding-bottom: 2px;
-    color: rgb(6, 49, 129);
+    color: #000;
+    font-family: zilla;
 }
 
 .driven {
@@ -355,8 +370,8 @@ h4 {
 .driven>h5 {
     font-size: 40px;
     font-style: italic;
-    color: #044fbe;
-    font-family: popinRegular;
+    color: #000;
+    font-family: metro;
 }
 
 .list {
@@ -372,14 +387,14 @@ h4 {
 .list>div h5 {
     font-size: 25px;
     padding-bottom: 5px;
-    color: #01275f;
-    font-weight: lighter;
-    font-family: popinRegular;
+    color: #000;
+    font-weight: 600;
+    font-family: zilla;
 }
 
 .list>div p {
-    color: #a1a1a1;
-    font-family: heebo;
+    color: #000000;
+    font-family: inter;
 }
 
 .list>div:hover {
@@ -520,9 +535,8 @@ em {
     grid-template-rows: minmax(220px, auto);
     grid-row-gap: 5rem;
     grid-column-gap: 3rem;
-    /* grid-gap: 7rem; */
     justify-items: center;
-    justify-content: center;
+
 
 }
 
@@ -548,9 +562,9 @@ em {
 }
 
 .card-text {
-    line-height: 1.2em;
+    line-height: 1.2rem;
     font-weight: lighter;
-        margin-top: 20px;
+     margin-top: 20px;
     
 
 }
@@ -559,7 +573,8 @@ em {
     font-size: 14px;
     font-weight:300;
     text-align: left;
-    font-family: melon;
+    font-family: inter;
+    letter-spacing: 0.5px;
  
 }
 
@@ -568,22 +583,39 @@ em {
     padding-top: 20px;
     color: #000;
     font-weight: 600;
-    font-family: heebo;
+    font-family: zilla;
+    letter-spacing: 0.5px;
 }
 
 
 .test1-text span {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 500;
     color: #012a68;
-    font-family: popinRegular;
+    font-family: inter;
     letter-spacing: 1px;
+}
+.test2-text div:nth-of-type(1){
+    font-size: 4rem;
+    color: #012a68;
+    font-family: inter;
+}
+.test2-text div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #012a68;
+    font-family: inter;
 }
 
 .test1-text h6 {
-    font-size: 16px;
+    font-size: 20px;
     padding-bottom: 20px;
     font-weight: 300;
+    font-family: zilla;
 }
 
 .div-text {
@@ -612,31 +644,18 @@ em {
     gap: 1rem;
 }
 
-.test2-text span:nth-child(1) {
-    font-size: 70px;
-    font-weight:lighter;
-    color: #012a68;
-}
 
-.test2-text span:nth-child(2) {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.5rem;
-}
 
 .span {
     display: block;
 }
 
-.quality-banner{
-    margin-top: 10%;
-}
+
 .quality-banner-box {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
     grid-column-gap: 0.5rem;
-    background-image: linear-gradient(45deg, #007991 0%, #244248DE 85%);
-    background-color: transparent;
+    background-image: linear-gradient(45deg, #007991 0%, #0089a4de 85%);
     opacity: 0.95;
     height: auto;
     padding-left: 5%;
@@ -660,13 +679,14 @@ em {
     color: #fff;
     letter-spacing: 2px;
     font-weight: 700;
+    font-family: zilla;
 }
 
 .banner-box>p {
-    line-height: 1.7rem;
+    line-height: 1.5rem;
     color: #fff;
-    font-weight: bold;
-    font-family: heebo;
+    font-weight: lighter;
+    font-family: inter;
 }
 
 .important-banner {
@@ -682,6 +702,7 @@ em {
     font-weight: 300;
     padding-bottom: 20px;
     color: #007991;
+    font-family: zilla;
 }
 
 .important-banner>p {
@@ -689,11 +710,13 @@ em {
     font-weight: bold;
     line-height: 2.2rem;
     padding-bottom: 40px;
+    font-family: inter;
 }
 
 .important-banner>a {
     font-weight: 600;
     color: #000;
+    font-family: metro;
 }
 
 .blog-post {
@@ -704,16 +727,13 @@ em {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
     grid-gap: 2rem;
-    counter-reset: count;
     padding-bottom: 50px;
     place-items: center;
     justify-items: center;
 }
 
 .post-items {
-    width: 300px;
-   
-
+    width: 270px;
 }
 .blog-items{
     background-color: #05709b;
@@ -722,10 +742,6 @@ em {
     width: 100%;
 }
 
-.blog-post-text>h3::before {
-    counter-increment: count;
-    content: counter(count) " . ";
-}
 .blog-post-text{
    
     color: #fff;
@@ -735,6 +751,8 @@ em {
     line-height: 1.5rem;
     font-size: 16px;
     margin-bottom: 15px;
+    font-family: zilla;
+    letter-spacing: 1px;
    }
 
 .blog-post-text>p {
@@ -742,6 +760,8 @@ em {
     line-height: 1.2rem;
     text-align: left;
     padding-bottom: 20px;
+    font-family: inter;
+    letter-spacing:0.02rem;
 }
 
 .blog-post-text>.btn-blog {
@@ -752,7 +772,7 @@ em {
     align-items: center;
     padding: 10px;
     margin: auto auto;
-    /* margin-top: 40px; */
+ font-family: metro;
     border: none;
     outline: none;
     background-color: transparent;
@@ -761,6 +781,13 @@ em {
     font-weight: 500;
     border-radius: 20px;
     letter-spacing: 2px;
+}
+.blog-post-text>.btn-blog:hover{
+    cursor: pointer;
+    background-color: rgb(158, 0, 0);
+    transition: 0.5s;
+    border: none;
+
 }
 .partners{
      margin-top: 10%; 
@@ -777,14 +804,16 @@ em {
     margin-bottom: 5%;
     color: #fff;
     font-size: 25px;
+    font-family: zilla;
 }
 .parntner-logos{
     display: flex;
-    gap: 10rem;
+    gap: 5rem;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    padding: 5rem;
 }
 .logo-box p{
     width: 70%;
@@ -794,11 +823,10 @@ em {
     font-family: font;
     line-height: 1.5;
     font-size: 20px;
-    /* height: 15rem; */
+  font-family: inter;
 }
 .logo-box{
     display: grid;
-    /* height: 5rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -814,7 +842,6 @@ margin-top: 3rem;
    width: 60px;
 font-weight: 700;
 outline: none;
-/* border: 1px solid rgba(0, 0, 0, 0.3); */
 border: none;
 border-radius: 4px;
 background-color: transparent;
@@ -836,13 +863,9 @@ color: #fff;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    /* margin-top: 7rem; */
 }
 #prev{
-    /* position: absolute; */
-    /* left: 0px; */
     display: flex;
-    /* justify-content: start; */
 }
 .accordion{
     margin-top: 50px;
@@ -856,11 +879,11 @@ color: #fff;
     opacity: 0;
     visibility: hidden;
    height: 0;
-    /* overflow: none; */
     font-family: heebo;
     font-size: 18px;
     display: flex;
     align-items: center;
+    font-family: inter;
 }
 .accordion-div p.active{
     visibility:visible;
@@ -896,6 +919,7 @@ font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: zilla;
 }
 .faq-header{
     margin-top: 10%;
@@ -903,10 +927,12 @@ font-size: 30px;
 .faq-header h3{
     font-size: 30px;
     padding-bottom: 10px;
+    font-family: zilla;
 }
 .faq-header span{
     font-style: italic;
-    color: rgb(3, 40, 107);
+    color: #000;
+    font-family: inter;
 }
 .footer{
     margin-top: 20%;
@@ -922,9 +948,6 @@ font-size: 30px;
     align-items: center;
     padding: 0px 50px;
     position: relative;
-  
-
-
 }
 .company{
     display: flex;
@@ -939,20 +962,19 @@ font-size: 30px;
     align-items: center;
 }
 .copyright-section p{
-    font-family: heebo;
+    font-family: metro;
     font-size: 16px;
 }
 .footer-container > div >h3{
     margin-bottom: 20px;
-    font-family: heebo;
+    font-family: zilla;
 }
 .footer-container > div ul li{
     margin-top: 5px;
 }
 .footer-container > div ul li a{
     font-size: 15px;
-    font-family:heebo;
-    /* font-weight: lighter; */
+    font-family:inter;
     color: rgb(0,0,0);
     letter-spacing: 1px;
 }
@@ -960,21 +982,22 @@ font-size: 30px;
 margin-bottom: 20px;
 }
 .info > div > h5{
-    font-family: heebo;
+    font-family: zilla;
     font-weight: 700;
     margin-bottom: 10px;
 }
 .info > div > span{
-    font-family: heebo;
+    font-family: inter;
 }
 .footer-container > div:nth-child(1) p{
- font-family: heebo;
+ font-family: inter;
  margin-bottom: 20px;   
 }
 .icons a{
     padding: 5px;
     font-size: 20px;
     color: rgb(5, 54, 189);
+    font-family: inter;
 }
 footer hr{
     color: rgba(0,0,0,0.5);
