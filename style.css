@@ -136,7 +136,7 @@ body{
 
 .hero-main {
     background-image: linear-gradient(to right, rgba(3, 81, 160,1), rgba(3, 81, 160,0.5)),
-    url(images/pexels-christina-morillo-1181396.jpg);
+    url(./images/pexels-christina-morillo-1181396.jpg);
     height: 700px;
     background-position: center;
     background-attachment: fixed;
@@ -394,7 +394,7 @@ h4 {
 .Promo{
     text-align: center;
     background-image: linear-gradient(rgba(20, 50, 50, 1), rgba(20, 50, 50, 0.5)),
-        url(images/pexels-christina-morillo-1181396.jpg);
+        url(./images/pexels-christina-morillo-1181396.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -1036,7 +1036,7 @@ border-top-left-radius: 5px;
     height: 700px;
     width: 100%;
     background-size: cover;
-    background-image: linear-gradient(rgb(1, 44, 124),rgba(6, 18, 32, 0.555)), url(images/contact.jpg);
+    background-image: linear-gradient(rgb(1, 44, 124),rgba(6, 18, 32, 0.555)), url(./images/contact.jpg);
     background-position:center;
     background-attachment: fixed;
     color: #fff;
@@ -1172,7 +1172,7 @@ iframe{
     width: 100%;
     background-size: cover;
     background-image: linear-gradient(rgb(1, 44, 124),rgba(6, 18, 32, 0.555)), 
-    url(images/pexels-christina-morillo-1181396.jpg);
+    url(./images/pexels-christina-morillo-1181396.jpg);
     background-position:center;
     background-attachment: fixed;
     color: #fff;
