@@ -1,4 +1,7 @@
 @media(max-width:920px) {
+    /* *{
+        outline: 1px solid black;
+    } */
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -37,8 +40,7 @@
     margin-left: 50px;
 }
     .logo-footer {
-        margin-left: 50px;
-        width: 70px;
+            width: 70px;
     }
 .nav-form{
     margin-right: 50px;
@@ -98,10 +100,6 @@
     }
 }
 @media screen and (max-width:850px){
-    *{
-        overflow-wrap: break-word;
-        word-break: break-all;
-    }
     .course_img{
         display: none;
     }
@@ -110,7 +108,8 @@
         display: flex;
          position:relative;
          flex-direction: column;
-
+overflow-wrap: break-word;
+word-break: break-all;
     }
     .logo-footer{
         width: 10rem;
@@ -154,14 +153,8 @@
     .box img {
         width: 100px;
         float: right;
+
         /* margin: auto; */
-    }
-    .test1-text span {
-        font-size: 25px;
-        font-weight: 300;
-    }
-    .test2-text span:nth-child(1) {
-        font-size: 40px;
     }
     .card {
         height: 180px;
@@ -179,7 +172,6 @@
         margin-top: -10%;
     }
     .box {
-        width: 20rem;
         height: auto;
         padding-bottom: 20px;
         /* transform: scale(none); */
@@ -268,7 +260,7 @@
     .grid{
         flex-direction: column;
     }
-    /* .grid div h1 {
+    .grid div h1 {
         font-size: 3rem;
         text-align: center;
         line-height: 3.7rem;
@@ -276,13 +268,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    } */
-    /* .about-header p {
+    } 
+     .about-header p {
         font-size: 20px;
         font-family: heebo;
         text-align: center;
         width: auto;
-    } */
+    }
     .contact-boxes{ 
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -303,7 +295,11 @@
         color: #fff;
         line-height: 2rem;
     }
-    
+
+    .list > div:hover {
+	transform: none;
+	transition: .5s;
+}
     
 }
 
@@ -343,17 +339,18 @@
         line-height: 1.5;
     }
     .course_box_container {
-        grid-template-columns: repeat(1,1fr);      
+        grid-template-columns: repeat(1,1fr);   
+        display: flex;   
+        flex-direction: column;
     }
     .course_offer{
         margin-top: 20%;
     }
-    .box{
-        width:70%;
-        height: auto;
-        /* transform: scale(none); */
+    .driven {
+          gap: 0;
+        padding:0;
+        margin: auto auto;
     }
- 
     .box img {
         width: 100px;
         float: right;
@@ -366,7 +363,6 @@
     }
     .driven h3 {
         font-size: 25px;
-        /* padding-bottom: 2px; */
         color: rgb(6, 49, 129);
     }
 .driven h5{
@@ -375,7 +371,6 @@
 .list > div h5 {
 	font-size: 20px;
 	padding-bottom: 5px;
-    font-family: heebo;
 	color: #01275f;
 }
 .list > div p {
@@ -414,7 +409,11 @@
 
 }
 .Test1{
-    grid-gap: 7rem;
+    /* grid-gap: 7rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .footer-container {
     display: grid;
@@ -456,6 +455,21 @@
 	height: 50px;
 	width: 70%
 }
+.parntner-logos {
+	padding:0;
+}
+.blog-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 80%;
+}
+.test1-text span {
+	font-size: 2rem;
+}
 }
 @media (max-width:370px){
   
@@ -493,10 +507,12 @@
     .team_card {
         width:17rem; 
     }
+    .driven{
+        padding: 0;
+        margin: auto auto;
+    }
     .list > div  {
-      width: 250px;
-      word-wrap: break-word;
-      word-break: break-all;
+      width:100%;
       line-height: 1rem;
 
     }
@@ -520,6 +536,7 @@
     .quality-banner-box {
         grid-template-columns: 1fr;
         height: auto;
+        padding: 0;
     }
     .important-banner {
         background-color: #fff;
@@ -590,5 +607,16 @@
     text-align: center;
     width: 100%;
     margin: 0px 0px; padding: 0px 0px;
+}
+.box-footer img{
+    display: none;
+}
+.list > div {
+	width: 15rem;
+}
+.deliver{
+    /* margin: auto auto; */
+    display: flex;
+    flex-direction: column;
 }
 }
