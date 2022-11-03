@@ -372,6 +372,7 @@ word-break: break-all;
     }
     .driven h3 {
         font-size: 25px;
+        color: rgb(6, 49, 129);
     }
 .driven h5{
     font-size: 30px;
@@ -379,10 +380,12 @@ word-break: break-all;
 .list > div h5 {
 	font-size: 20px;
 	padding-bottom: 5px;
+	color: #01275f;
 }
 .list > div p {
+	color: #a1a1a1;
     font-size: 15px;
-    font-family: inter;
+    font-family: heebo;
 }
 .list > div {
 	width: auto;

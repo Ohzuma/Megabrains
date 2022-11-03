@@ -537,6 +537,7 @@ em {
     grid-row-gap: 5rem;
     grid-column-gap: 3rem;
     justify-items: center;
+    place-content: center;
 
 
 }
@@ -953,6 +954,9 @@ font-size: 30px;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+}
+.logo-footer {
+    width: 70px;
 }
 .copyright-section{
     padding: 0px 50px;  
