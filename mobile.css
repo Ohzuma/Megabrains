@@ -305,7 +305,7 @@ word-break: break-all;
 
 @media (max-width:500px){
     .hero-main {
-        height: 27rem;
+        /* height: 27rem; */
 
     }
     .banner {
@@ -322,6 +322,15 @@ word-break: break-all;
         place-content: center;
         text-align: left;
      
+    }
+    .hero-text span{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        line-height: 2rem;
     }
     .banner .banner_box h3{
         font-size: 18px;
@@ -363,7 +372,6 @@ word-break: break-all;
     }
     .driven h3 {
         font-size: 25px;
-        color: rgb(6, 49, 129);
     }
 .driven h5{
     font-size: 30px;
@@ -371,12 +379,10 @@ word-break: break-all;
 .list > div h5 {
 	font-size: 20px;
 	padding-bottom: 5px;
-	color: #01275f;
 }
 .list > div p {
-	color: #a1a1a1;
     font-size: 15px;
-    font-family: heebo;
+    font-family: inter;
 }
 .list > div {
 	width: auto;
