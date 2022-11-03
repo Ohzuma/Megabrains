@@ -152,9 +152,8 @@ body{
 }
 
 .hero-main {
-    /* background-image: linear-gradient(to right, rgba(3, 81, 160,1), rgba(3, 81, 160,0.5)),
-    url(./images/pexels-christina-morillo-1181396.jpg); */
-    background-color: yellow;
+    background-image: linear-gradient(to right, rgba(3, 81, 160,1), rgba(3, 81, 160,0.5)),
+    url(./images/pexels-christina-morillo-1181396.jpg);
     height: 700px;
     background-position: center;
     background-attachment: fixed;
