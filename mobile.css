@@ -106,9 +106,6 @@
         font-size:20px;
     
     }
-    .banner{
-        /* margin-top: -200px; */
-    }
 }
 @media screen and (max-width:850px){
     .course_img{
@@ -125,10 +122,10 @@ word-break: break-all;
 
 
     .contact-item{
-        margin-top: -350px;
+        /* margin-top: -350px; */
         height:auto;
         background-color: #fff;
-        position: relative;
+        /* position: relative; */
         box-shadow: none;
         width: 100%;
         margin-left: 0;
@@ -695,5 +692,8 @@ word-break: break-all;
     }
     .box {
         width: 100%;
+    }
+    .contact-boxes{
+        padding: 2rem;
     }
 }
