@@ -69,6 +69,7 @@ const fqa = [
 //   }
 // }
 fqa.map((questions, i) => {
+
   const { question, ans } = questions;
   const div = document.createElement("div");
   div.classList = `accordion-div`;
@@ -79,17 +80,14 @@ fqa.map((questions, i) => {
   accordion.appendChild(div);
   let paragraph = document.createElement("div");
   paragraph.innerHTML = "Ans:" + " " + ans;
-
-  div.appendChild(paragraph);
-
-  btnItem.addEventListener("click", () => {
+div.appendChild(paragraph)
+    btnItem.addEventListener("click", () => {
       btnItem.classList.toggle("active");
           paragraph.classList.toggle("active");
-    //   if(e === i){
-    //     console.log(e.target)
-    // }else{
-        
-    // }
+
 
   });
 });
+          paragraph.classList.toggle("active");
+
+
