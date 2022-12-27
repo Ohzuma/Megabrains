@@ -1,11 +1,12 @@
 @media (max-width:1192px){
     .banner{
       place-items: center;
+      height: auto;
     }
  
 }
 
-@media(max-width:920px) {
+@media(max-width:960px) {
     /* *{
         outline: 1px solid black;
     } */
@@ -33,7 +34,7 @@
 
     .nav-items.active {
         background: rgb(255, 255, 255);
-        top: 15%;
+        top: 75px;
         opacity: 1;
         transition: all 0.7s ease;
         z-index: 1;
@@ -106,6 +107,7 @@
         font-size:20px;
     
     }
+
 }
 @media screen and (max-width:850px){
     .course_img{
@@ -207,6 +209,7 @@ word-break: break-all;
     align-items: start;
 }
 
+
 }
 @media (max-width:700px){
     .driven > h5 {
@@ -217,7 +220,7 @@ word-break: break-all;
     margin: -300px 5px;
 } */
 }
-@media(max-width:670px){
+@media(max-width:684px){
     .hero-main {
          height: 35rem;
     }
@@ -309,6 +312,7 @@ word-break: break-all;
 .blog-items{
     height: auto;
 }
+
 }
     
 
@@ -487,9 +491,9 @@ word-break: break-all;
         line-height: 2rem;
     }
 
-    .nav-items.active{
-        top: 18%;
-    }
+    /* .nav-items.active{
+     
+    } */
     .card h4{
         display: flex;
         justify-content: center;
@@ -638,7 +642,7 @@ word-break: break-all;
 .blog-items{
     height: auto;
     width: auto;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     text-align: center;
